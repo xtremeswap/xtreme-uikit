@@ -2099,7 +2099,7 @@ var Logo$1 = function (_a) {
     var isPushed = _a.isPushed, togglePush = _a.togglePush, isDark = _a.isDark, href = _a.href;
     var isAbsoluteUrl = href.startsWith("http");
     var innerLogo = (React__default['default'].createElement(React__default['default'].Fragment, null,
-        React__default['default'].createElement(Logo, { className: "mobile-icon", isDark: isDark }),
+        React__default['default'].createElement(Icon$q, { className: "mobile-icon" }),
         React__default['default'].createElement(Logo, { className: "desktop-icon", isDark: isDark })));
     return (React__default['default'].createElement(Flex, null,
         React__default['default'].createElement(MenuButton, { "aria-label": "Toggle menu", onClick: togglePush, mr: "24px" }, isPushed ? (React__default['default'].createElement(Icon$L, { width: "24px", color: "textSubtle" })) : (React__default['default'].createElement(Icon$K, { width: "24px", color: "textSubtle" }))),
