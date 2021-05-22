@@ -2212,70 +2212,17 @@ var socials = [
     {
         label: "Telegram",
         icon: "TelegramIcon",
-        items: [
-            {
-                label: "English",
-                href: "https://t.me/goosedefi",
-            },
-            // {
-            //   label: "Bahasa Indonesia",
-            //   href: "https://t.me/PancakeSwapIndonesia",
-            // },
-            {
-                label: "中文",
-                href: "https://t.me/goosefinancechinese",
-            },
-            // {
-            //   label: "Tiếng Việt",
-            //   href: "https://t.me/PancakeSwapVN",
-            // },
-            {
-                label: "Italiano",
-                href: "https://t.me/goosefinanceitalian",
-            },
-            {
-                label: "русский",
-                href: "https://t.me/goosefinancerussian",
-            },
-            {
-                label: "Türkiye",
-                href: "https://t.me/GooseFinanceTurkey",
-            },
-            // {
-            //   label: "Português",
-            //   href: "https://t.me/PancakeSwapPortuguese",
-            // },
-            {
-                label: "Español",
-                href: "https://t.me/goosefinancespanish",
-            },
-            {
-                label: "日本語",
-                href: "https://t.me/goosefinancejapanese",
-            },
-            {
-                label: "Français",
-                href: "https://t.me/goosefinancefrench",
-            },
-            {
-                label: "Announcements",
-                href: "https://t.me/goosefinanceann",
-            },
-            {
-                label: "Price Bot",
-                href: "https://t.me/BinanceRocketEGG",
-            },
-        ],
+        href: "https://t.me/extrememoon",
     },
     {
         label: "Twitter",
         icon: "TwitterIcon",
-        href: "https://twitter.com/goosedefi",
+        href: "https://twitter.com/TheXtremeMoon",
     },
     {
         label: "Reddit",
         icon: "RedditIcon",
-        href: "https://www.reddit.com/r/GooseFinanceofficial",
+        href: "https://www.reddit.com/r/XtremeMoon/",
     },
 ];
 var MENU_HEIGHT = 64;
@@ -2407,9 +2354,17 @@ var PanelFooter = function (_a) {
                 var Icon = Icons$1[social.icon];
                 var iconProps = { width: "24px", color: "textSubtle", style: { cursor: "pointer" } };
                 var mr = index < socials.length - 1 ? "8px" : 0;
-                if (social.items) {
-                    return (React.createElement(Dropdown, { key: social.label, position: "top", target: React.createElement(Icon, __assign({}, iconProps, { mr: mr })) }, social.items.map(function (item) { return (React.createElement(Link, { external: true, key: item.label, href: item.href, "aria-label": item.label, color: "textSubtle" }, item.label)); })));
-                }
+                // if (social.items) {
+                //   return (
+                //     <Dropdown key={social.label} position="top" target={<Icon {...iconProps} mr={mr} />}>
+                //       {social.items.map((item) => (
+                //         <Link external key={item.label} href={item.href} aria-label={item.label} color="textSubtle">
+                //           {item.label}
+                //         </Link>
+                //       ))}
+                //     </Dropdown>
+                //   );
+                // }
                 return (React.createElement(Link, { external: true, key: social.label, href: social.href, "aria-label": social.label, mr: mr },
                     React.createElement(Icon, __assign({}, iconProps))));
             }))),
